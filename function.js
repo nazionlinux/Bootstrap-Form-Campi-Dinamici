@@ -4,7 +4,7 @@ $(function()
     {
         e.preventDefault();
 
-        var controlForm = $('.controls form:first'),
+        var controlForm = $('.controls fieldset:first'),
             currentEntry = $(this).parents('.entry:first'),
             newEntry = $(currentEntry.clone()).appendTo(controlForm);
 
