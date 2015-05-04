@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="utf-8">
-    <title>Bootstrap Form - CAmpi Dinamici</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<title>Bootstrap Form - Campi Dinamici</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container">
-	<div class="row">
-        <div class="control-group" id="fields">
-            <label class="control-label" for="field1">Nice Multiple Form Fields</label>
-            <div class="controls"> 
-                <form role="form" autocomplete="off">
-                	<fieldset>
-	                    <div class="entry input-group col-xs-3">
-	                        <input class="form-control" name="fields[]" type="text" placeholder="Type something" />
-	                    	<span class="input-group-btn">
-	                            <button class="btn btn-success btn-add" type="button">
-	                                <span class="glyphicon glyphicon-plus"></span>
-	                            </button>
-	                        </span>
-	                    </div>
-                    </fieldset>
-                    <fieldset>
-                    	<div class="input-group col-xs-3">
-	                        <input class="form-control" name="totale" type="text" placeholder="Type something" />
-	                    </div>                    	
-                    </fieldset>
-                </form>
-            <br>
-            <small>Press <span class="glyphicon glyphicon-plus gs"></span> to add another form field :)</small>
-            </div>
-        </div>
-	</div>
-</div>
-<script src="scr/function.js"></script>
+	<div class="container">
+		<div class="row">
+			<div class="control-group">
+				<h3>Bootstrap Form - Campi Dinamici</h3>
+				<div class="controls"> 
+					<form role="form" autocomplete="off">
+						<fieldset>
+							<div class="entry form-group">
+								<label class="control-label col-xs-3" for="prezzo[]">Totale</label>
+								<div class="input-group col-xs-3">
+									<input class="form-control" name="prezzo[]" type="text" placeholder="1.00" />
+									<span class="input-group-btn">
+										<button class="btn btn-success btn-add" type="button">
+											<span class="glyphicon glyphicon-plus"></span>
+										</button>
+									</span>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset>
+							<div class="form-group">
+								<label class="control-label col-xs-3" for="totale">Totale</label>
+								<div class="input-group col-xs-3">
+									<input class="form-control" name="totale" type="text" placeholder="totale" />
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div><!-- //controls -->
+			</div><!-- //control-group -->
+			<p>Premi <button class="btn btn-success btn-add" type="button"><span class="glyphicon glyphicon-plus"></span></button> per aggiungere un campo</p>
+			<p>Premi <button class="btn btn-danger btn-remove" type="button"><span class="glyphicon glyphicon-minus"></span></button> per rimuovere un campo</p>
+		</div><!-- //row -->
+	</div><!-- //container -->
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+	<script src="scr/function.js"></script>
+
 </body>
 </html>
