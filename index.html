@@ -2,11 +2,12 @@
 <html lang="it">
 <head>
     <meta charset="utf-8">
-    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
     <title>Bootstrap Form - CAmpi Dinamici</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 </head>
@@ -32,31 +33,6 @@
         </div>
 	</div>
 </div>
-<script type="text/javascript">
-$(function()
-{
-    $(document).on('click', '.btn-add', function(e)
-    {
-        e.preventDefault();
-
-        var controlForm = $('.controls form:first'),
-            currentEntry = $(this).parents('.entry:first'),
-            newEntry = $(currentEntry.clone()).appendTo(controlForm);
-
-        newEntry.find('input').val('');
-        controlForm.find('.entry:not(:last) .btn-add')
-            .removeClass('btn-add').addClass('btn-remove')
-            .removeClass('btn-success').addClass('btn-danger')
-            .html('<span class="glyphicon glyphicon-minus"></span>');
-    }).on('click', '.btn-remove', function(e)
-    {
-		$(this).parents('.entry:first').remove();
-
-		e.preventDefault();
-		return false;
-	});
-});
-
-</script>
+<script src="scr/function.js"></script>
 </body>
 </html>
