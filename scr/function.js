@@ -9,7 +9,7 @@ $(function()
             newEntry = $(currentEntry.clone()).appendTo(controlForm);
 
         newEntry.find('input').val('');
-        controlForm.find('.entry:not(:last) .btn-add')
+        controlForm.find('.entry:not(:first) .btn-add')
             .removeClass('btn-add').addClass('btn-remove')
             .removeClass('btn-success').addClass('btn-danger')
             .html('<span class="glyphicon glyphicon-minus"></span>');
